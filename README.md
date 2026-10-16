@@ -44,5 +44,5 @@ npx wrangler pages dev public
 ## 変更するときの注意
 
 - **Lens のポリシー**: `/lens/privacy` の保存期間などの値は、`lens/docs/spoon-developers-spec.md` の §6.3 と一致させてください。どちらかを変えたら、もう一方も確認します。改定したら、ページの改定日も更新します。
-- **連絡先**: `contact@hitosaji.live` と X の `@sp_shino04` を使います。変えるときは、Lens 本番の `.env`（`PRIVACY_CONTACT_*`）と Spoon のボットのプロフィールも直してください。
+- **連絡先**: `contact@hitosaji.live` と X の `@sp_shino04` を使います。変えるときは、全ページと Spoon のボットのプロフィールを直してください。
 - **書かないこと**: 実名、Spoon 公式のサービスだと誤解される書き方、まだない機能、Lens の利用の呼びかけ。
