@@ -218,6 +218,21 @@ li + li {
   margin: 0 0 0.5rem;
 }
 
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--accent);
+  /* ライトでは白、ダークでは黒に近い文字にして、どちらでも読みやすくする */
+  color: var(--bg);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button:hover {
+  filter: brightness(1.08);
+}
+
 .notice {
   padding: 0.5rem 0.75rem;
   border-left: 4px solid var(--accent);

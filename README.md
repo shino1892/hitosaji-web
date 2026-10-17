@@ -15,6 +15,8 @@ Spoon のボット「ひとさじBot」の紹介サイトです。ボットの�
 | `public/privacy.html` | `/privacy` | ボット全体のプライバシーポリシー |
 | `public/manager/index.html` | `/manager/` | ひとさじマネージャーの紹介 |
 | `public/manager/privacy.html` | `/manager/privacy` | ひとさじマネージャーのプライバシーポリシー |
+| `public/manager/terms.html` | `/manager/terms` | ひとさじマネージャーの利用規約 |
+| `public/terms.html` | `/terms` | ボット全体とこのサイトの利用規約 |
 | `public/lens/index.html` | `/lens/` | Listener Lens の紹介 |
 | `public/lens/privacy.html` | `/lens/privacy` | Listener Lens のプライバシーポリシー |
 | `public/404.html` | 見つからないとき | Cloudflare Pages が自動で使います |
