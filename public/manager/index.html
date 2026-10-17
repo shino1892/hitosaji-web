@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ひとさじマネージャー | ひとさじBot</title>
+<meta name="description" content="ひとさじマネージャーは、Spoon の配信者が自分の配信に招くマネージャーボットです。">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="/">🥄 ひとさじBot</a>
+    <nav class="site-nav" aria-label="サイト内">
+      <ul>
+        <li><a href="/">トップ</a></li>
+        <li><a href="/manager/" aria-current="page">ひとさじマネージャー</a></li>
+        <li><a href="/lens/">Listener Lens</a></li>
+        <li><a href="/privacy">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>ひとさじマネージャー</h1>
+<p class="lead">Spoon の配信者が自分の配信に招く、マネージャーボットです。</p>
+<p class="notice">ただいま準備中です。Spoon Developers の審査が終わったら、使えるようになります。</p>
+
+<h2>できること</h2>
+<ul>
+  <li>入室のあいさつ（はじめまして・いらっしゃい・おかえりなさい）</li>
+  <li>ハートとスプーンへのお礼</li>
+  <li>遊びコマンド: <code>!おみくじ</code> <code>!サイコロ</code> <code>!じゃんけん グー</code> <code>!コイン</code> <code>!えらんで A B</code> <code>!相性 ◯◯</code> <code>!ヘルプ</code></li>
+  <li>配信者が登録したコマンドへの返答（例: <code>!sns</code> で SNS の案内）</li>
+  <li>配信者が登録した定期的な案内（5〜180分ごと。いくつでも登録でき、1つずつオン・オフできます）</li>
+</ul>
+<p>どの機能もオン・オフでき、あいさつやお礼の文面は配信者が自由に変えられます。</p>
+
+<h2>配信者の方へ</h2>
+<ul>
+  <li>管理画面に Google でログインし、Spoon の配信者アカウントと連携して使います</li>
+  <li>入室のあいさつを使うには、ひとさじBot を固定マネージャーに指定してください</li>
+  <li>連携の解除とアカウントの削除は、管理画面からいつでもできます。解除すると、保存していた情報はすべて削除します</li>
+</ul>
+
+<h2>リスナーの方へ</h2>
+<ul>
+  <li>チャットの本文やニックネームは保存しません</li>
+  <li>あいさつやお礼がいらないときは、チャットで <code>!あいさつ不要</code> と送ってください（<code>!あいさつ再開</code> で戻せます）</li>
+</ul>
+<p>くわしくは<a href="/manager/privacy">ひとさじマネージャーのプライバシーポリシー</a>をご覧ください。</p>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>ひとさじBot は、Spoon 公式の Spoon Developers API を使って個人が運営しているボットです。Spoon 公式のサービスではありません。</p>
+    <p><a href="/privacy">プライバシーポリシー</a> ・ <a href="/manager/privacy">ひとさじマネージャーのプライバシーポリシー</a> ・ <a href="/lens/privacy">Listener Lens のプライバシーポリシー</a></p>
+  </div>
+</footer>
+</body>
+</html>

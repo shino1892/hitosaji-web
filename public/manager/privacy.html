@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ひとさじマネージャー プライバシーポリシー | ひとさじBot</title>
+<meta name="description" content="ひとさじマネージャーのプライバシーポリシーです。">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="/">🥄 ひとさじBot</a>
+    <nav class="site-nav" aria-label="サイト内">
+      <ul>
+        <li><a href="/">トップ</a></li>
+        <li><a href="/manager/">ひとさじマネージャー</a></li>
+        <li><a href="/lens/">Listener Lens</a></li>
+        <li><a href="/privacy">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>ひとさじマネージャー プライバシーポリシー</h1>
+<p class="muted">2026年10月17日 制定</p>
+
+<section>
+  <h2>このサービスについて</h2>
+  <p>ひとさじマネージャーは、Spoon の配信者が自分の配信に招くマネージャーボットです。Spoon 公式の Spoon Developers API を使い、配信者が Spoon で許可した範囲の情報だけを扱います。</p>
+  <p>配信者が連携すると、ボット「ひとさじBot」が配信に入り、入室のあいさつ、ハートとスプーンへのお礼、コマンドへの返答、配信者が登録した定期的な案内を、チャットでニックネームを添えてお送りします。どの機能を使うかと文面は、配信者が決めます。</p>
+  <p>ボットが配信に参加していることは、Spoon が配信のチャットで自動的にお知らせします。</p>
+</section>
+
+<section>
+  <h2>配信者について扱う情報</h2>
+  <ul>
+    <li>Google アカウントの識別子と表示名（管理画面へのログインに使います。メールアドレスは受け取りません）</li>
+    <li>Spoon との連携に使う認証情報と、許可された権限</li>
+    <li>配信者が設定した内容（機能のオン・オフ、あいさつやお礼の文面、コマンド、定期的な案内）</li>
+  </ul>
+</section>
+
+<section>
+  <h2>リスナーについて扱う情報</h2>
+  <ul>
+    <li>リスナーの識別子（Spoon が提供する、このボットと配信者の組み合わせ専用の暗号化された値）と、最後に入室した日時。「はじめまして」と「いらっしゃい」を言い分けるためだけに保存します</li>
+    <li>あいさつを断ったリスナーの識別子（断ったことを覚えておくためだけに保存します）</li>
+  </ul>
+  <p>次の情報は保存しません。</p>
+  <ul>
+    <li>チャットの本文。コマンドかどうかを見分けるために読むだけで、保存も記録もしません</li>
+    <li>ニックネーム。返信に添えるために使うだけです</li>
+    <li>ハートやスプーンの数、ギフトのメッセージ、プロフィール画像</li>
+  </ul>
+</section>
+
+<section>
+  <h2>利用目的</h2>
+  <p>配信者が選んだ機能で、ボットがチャットに返信するためだけに使います。情報を第三者に提供したり、公開したり、ほかの配信者の情報と結び付けたりすることはありません。</p>
+</section>
+
+<section>
+  <h2>保存期間</h2>
+  <ul>
+    <li>リスナーの識別子と最後に入室した日時: 最後に入室した日から1年</li>
+    <li>あいさつを断ったリスナーの識別子: 配信者が連携を解除するまで</li>
+    <li>配信者の設定と Spoon の認証情報: 配信者が連携を解除するまで</li>
+    <li>配信者の Google アカウントの識別子と表示名: 配信者がアカウントを削除するまで</li>
+    <li>ボットの動作の記録（リスナーを特定する情報は含みません）: 30日</li>
+  </ul>
+  <p>期間を過ぎた情報は、毎日の処理で復元できない方法で削除します。データベースのバックアップは7日分だけ残し、それより古いものは削除します。</p>
+  <p>配信者が連携を解除したとき、またはアカウントを削除したときは、その配信者の設定と、その配信者の配信で保存したリスナーの情報を、ただちにすべて削除します。</p>
+</section>
+
+<section>
+  <h2>あいさつやお礼がいらないとき</h2>
+  <p>配信のチャットで <code>!あいさつ不要</code> と送ってください。その配信者の配信で、あなたへのあいさつとお礼を止め、入室の記録も消します。<code>!あいさつ再開</code> と送ると元に戻ります。</p>
+</section>
+
+<section>
+  <h2>情報を消してほしいとき・お問い合わせ</h2>
+  <p>次のいずれかでご連絡ください。ご依頼を受けたら、あなたの情報を削除します。</p>
+  <ul>
+    <li>X（旧Twitter）: <a href="https://x.com/sp_shino04" rel="noopener noreferrer">@sp_shino04</a> へのダイレクトメッセージ</li>
+    <li>メール: <a href="mailto:contact@hitosaji.live">contact@hitosaji.live</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>情報の管理</h2>
+  <p>情報は運営者（shino）が管理するサーバーに保存し、通信は暗号化します。Spoon との連携に使う認証情報も暗号化して保存し、ブラウザには渡しません。配信者は、管理画面で自分の設定だけを見たり変えたりできます。</p>
+</section>
+
+<section>
+  <h2>改定</h2>
+  <p>このポリシーを変えるときは、このページの内容を更新し、上に改定日を記載します。</p>
+</section>
+
+<p><a href="/manager/">ひとさじマネージャーに戻る</a></p>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>ひとさじBot は、Spoon 公式の Spoon Developers API を使って個人が運営しているボットです。Spoon 公式のサービスではありません。</p>
+    <p><a href="/privacy">プライバシーポリシー</a> ・ <a href="/manager/privacy">ひとさじマネージャーのプライバシーポリシー</a> ・ <a href="/lens/privacy">Listener Lens のプライバシーポリシー</a></p>
+  </div>
+</footer>
+</body>
+</html>
