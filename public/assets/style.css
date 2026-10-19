@@ -249,3 +249,45 @@ code {
   border-radius: 4px;
   background: var(--surface);
 }
+
+/* 表。狭い画面では横にはみ出さないよう、1列目の幅を詰めて折り返す */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+td:first-child {
+  width: 34%;
+}
+
+td:first-child code {
+  white-space: normal;
+}
+
+/* ページ内の目次 */
+.toc {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+.toc ul {
+  margin: 0;
+}

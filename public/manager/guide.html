@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使い方とよくある質問 | ひとさじマネージャー</title>
+<meta name="description" content="ひとさじマネージャーの始め方、配信中に使えるコマンド、よくある質問をまとめています。">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="/">🥄 ひとさじBot</a>
+    <nav class="site-nav" aria-label="サイト内">
+      <ul>
+        <li><a href="/">トップ</a></li>
+        <li><a href="/manager/" aria-current="page">ひとさじマネージャー</a></li>
+        <li><a href="/lens/">Listener Lens</a></li>
+        <li><a href="/privacy">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>使い方とよくある質問</h1>
+<p class="lead">ひとさじマネージャーを配信に入れるまでの流れと、配信中に使えるコマンドをまとめています。</p>
+
+<nav class="toc" aria-label="このページの目次">
+  <ul>
+    <li><a href="#start">はじめかた</a></li>
+    <li><a href="#screens">管理画面でできること</a></li>
+    <li><a href="#dj-commands">配信者が使えるコマンド</a></li>
+    <li><a href="#listener-commands">リスナーが使えるコマンド</a></li>
+    <li><a href="#faq">よくある質問</a></li>
+  </ul>
+</nav>
+
+<h2 id="start">はじめかた</h2>
+<ol>
+  <li><a href="https://manager.hitosaji.live/">管理画面</a>に Google でログインします。Google の表示名やメールアドレスは受け取りません。ログインすると<a href="/manager/terms">利用規約</a>に同意したものとします。</li>
+  <li>ホームの「Spoon と連携」を押し、Spoon にログインして許可します。<strong>配信に使っている Spoon アカウント</strong>でログインしてください。</li>
+  <li>あいさつやお礼の文面を、「あいさつ・お礼」の画面で好みに変えます（そのままでも使えます）。</li>
+  <li>配信を始めると、30秒ほどでボットが入ります。初めての配信では、ボットがあなたを一度だけフォローします。</li>
+  <li>入室のあいさつを使うときは、配信中にひとさじBot をマネージャーにしてください。固定マネージャーなら毎回、臨時マネージャーならその配信の間だけ、あいさつが届きます。</li>
+</ol>
+<p>ボットが配信に入ると、Spoon がチャット欄にボットのお知らせを出します。これは Spoon の仕組みで、ボットからは止められません。</p>
+
+<h2 id="screens">管理画面でできること</h2>
+<table>
+  <tr><th>画面</th><th>内容</th></tr>
+  <tr><td>ホーム</td><td>連携の状態、ボットのオン・オフ、自動入室のオン・オフ、「退出させる」「今すぐ入室させる」</td></tr>
+  <tr><td>あいさつ・お礼</td><td>入室のあいさつ、ハートのお礼（無料ハート・粗品・有料ハートの数ごと）、スプーンのお礼の文面とオン・オフ、遊びコマンドのオン・オフ</td></tr>
+  <tr><td>コマンド</td><td>自分のコマンドを登録（例: <code>!sns</code> で SNS の案内）。30個まで</td></tr>
+  <tr><td>定期メッセージ</td><td>5〜180分ごとに送る案内。10個まで、1つずつオン・オフ</td></tr>
+  <tr><td>リスナー</td><td>来てくれたリスナーの一覧と、1人ずつのあいさつやお礼の文面</td></tr>
+  <tr><td>グループ</td><td>リスナーをまとめた（常連さんなど）グループごとの文面。個人 → グループ → いつもの文面の順に使います</td></tr>
+  <tr><td>アカウント</td><td>Spoon 連携の解除、アカウントの削除</td></tr>
+</table>
+<p>文面には、<code>{name}</code>（リスナーのニックネーム）、<code>{hearts}</code>（ハートの数）、<code>{spoons}</code>（スプーンの数）を差し込めます。</p>
+
+<h2 id="dj-commands">配信者が使えるコマンド</h2>
+<p>配信者本人がチャットに送ったときだけ動きます。変えた設定は管理画面にも反映されます。全角の「！」や「オン」「オフ」も使えます。</p>
+<table>
+  <tr><th>コマンド</th><th>内容</th></tr>
+  <tr><td><code>!bot on</code> ／ <code>!bot off</code></td><td>ボット全体のオン・オフ</td></tr>
+  <tr><td><code>!あいさつ on</code> ／ <code>off</code></td><td>入室のあいさつ</td></tr>
+  <tr><td><code>!ハート on</code> ／ <code>off</code></td><td>ハートのお礼</td></tr>
+  <tr><td><code>!ギフト on</code> ／ <code>off</code></td><td>スプーンのお礼</td></tr>
+  <tr><td><code>!定期 on</code> ／ <code>off</code></td><td>定期メッセージ全体</td></tr>
+  <tr><td><code>!退出</code></td><td>ボットをこの配信から退出させる（この配信には戻りません。次の配信ではまた入ります）</td></tr>
+  <tr><td><code>!bot</code></td><td>いまの設定をチャットに表示</td></tr>
+</table>
+
+<h2 id="listener-commands">リスナーが使えるコマンド</h2>
+<table>
+  <tr><th>コマンド</th><th>内容</th></tr>
+  <tr><td><code>!おみくじ</code></td><td>今日の運勢とラッキーアイテム</td></tr>
+  <tr><td><code>!サイコロ</code></td><td>サイコロを振る（<code>!サイコロ 2d10</code> のように個数と面数も指定できます）</td></tr>
+  <tr><td><code>!じゃんけん グー</code></td><td>ボットとじゃんけん</td></tr>
+  <tr><td><code>!コイン</code></td><td>表か裏</td></tr>
+  <tr><td><code>!えらんで A B C</code></td><td>候補から1つ選ぶ</td></tr>
+  <tr><td><code>!相性 ◯◯</code></td><td>◯◯との相性を占う</td></tr>
+  <tr><td><code>!ヘルプ</code></td><td>使えるコマンドの一覧（配信者が登録したコマンドも出ます）</td></tr>
+  <tr><td><code>!あいさつ不要</code></td><td>自分へのあいさつとお礼を止める（<code>!あいさつ再開</code> で戻せます）</td></tr>
+</table>
+
+<h2 id="faq">よくある質問</h2>
+
+<h3>ボットが配信に入ってきません</h3>
+<ul>
+  <li>管理画面のホームで、ボットと自動入室がオンになっているか確かめてください。オフのときは「今すぐ入室させる」で入れます。</li>
+  <li>配信を始めてから入るまで、30秒ほどかかります。</li>
+  <li>この配信で <code>!退出</code> や「退出させる」を使ったときは、同じ配信には戻りません。「今すぐ入室させる」で入れます。</li>
+  <li>ホームに「もう一度連携してください」と出ているときは、「もう一度連携する」を押してください。</li>
+</ul>
+
+<h3>入室のあいさつが出ません</h3>
+<p>Spoon では、マネージャーでないボットには入室が届きません。配信中にひとさじBot をマネージャー（固定か臨時）にしてください。ボット自身や配信者本人の入室、<code>!あいさつ不要</code> を送ったリスナーには、あいさつしません。</p>
+
+<h3>Spoon との連携で「ログインに失敗しました」と出ます</h3>
+<p>アプリの中のブラウザでは、うまくいかないことがあります。Safari や Chrome で <a href="https://manager.hitosaji.live/">manager.hitosaji.live</a> を開いてやり直してください。ボットのアカウント（ひとさじBot）ではなく、配信に使っているアカウントでログインしてください。</p>
+
+<h3>「連携がキャンセルされました」と出ます</h3>
+<p>Spoon の許可の画面で、許可を押さずに閉じたときに出ます。もう一度「Spoon と連携」を押し、すべての項目を許可してください。</p>
+
+<h3>別の Google アカウントでも連携できますか</h3>
+<p>1つの Spoon アカウントは、1つの Google アカウントからだけ連携できます。前に使った Google アカウントでログインしてください。別の Google アカウントで連携すると、ボットは先に連携したほうだけで動きます。</p>
+
+<h3>保存しようとしたら「NG ワード」と出ました</h3>
+<p>荒らしや誤解を防ぐため、一部の言葉はボットから送れないようにしています。言い回しを変えてください。ふつうの言葉なのに止められるときは、<a href="#contact">連絡先</a>までお知らせください。</p>
+
+<h3>ボットのチャットが急に止まりました</h3>
+<p>チャットを埋めないよう、同じリスナーへのコマンドの返答は5秒に1回まで、送信は1.5秒ずつ空けています。Spoon の送信の上限に当たったときは、少し待ってから送り直します。メンテナンスで一時的に止めることもあります。</p>
+
+<h3>やめたいときは</h3>
+<p>管理画面のアカウント画面で、Spoon 連携の解除かアカウントの削除ができます。解除すると、保存していた設定やリスナーの情報はすべて削除します。</p>
+
+<h3>リスナーの情報はどこまで保存されますか</h3>
+<p>チャットの本文は保存しません。くわしくは<a href="/manager/privacy">プライバシーポリシー</a>をご覧ください。</p>
+
+<h2 id="contact">連絡先</h2>
+<p>困ったことや、おかしな動きに気づいたときは、メール（<a href="mailto:contact@hitosaji.live">contact@hitosaji.live</a>）か X（<a href="https://x.com/sp_shino04">@sp_shino04</a>）にご連絡ください。</p>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>ひとさじBot は、Spoon 公式の Spoon Developers API を使って個人が運営しているボットです。Spoon 公式のサービスではありません。</p>
+    <p><a href="/terms">利用規約</a> ・ <a href="/privacy">プライバシーポリシー</a> ・ <a href="/manager/terms">ひとさじマネージャーの利用規約</a> ・ <a href="/manager/privacy">ひとさじマネージャーのプライバシーポリシー</a> ・ <a href="/lens/privacy">Listener Lens のプライバシーポリシー</a></p>
+  </div>
+</footer>
+</body>
+</html>
